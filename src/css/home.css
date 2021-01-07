@@ -1,0 +1,225 @@
+
+.home-title {
+  color: #707070;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.meter-card {
+  width: 40vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.scrollmenu .meter-card {
+  display: inline-block;
+}
+
+.meter-template{
+  width: 35vw;
+}
+
+.design-elements {
+  background-color: white;
+  height: 20vh;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-illustration{
+  max-height: 85%;
+}
+
+.skills-to-learn {
+  height: 30vh;
+}
+
+.skills-to-learn__title {
+  color: #707070;
+  font-size: 2rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+/* Horizontal Scroll */
+
+.home-noLogin {
+  background-color:var(--white);
+  color: red;
+  height: 3vh;
+  width: 85%;
+  z-index: 1;
+  height: 15vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  
+}
+
+.no-login__message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2fe0ab;
+}
+
+.no-login__link{
+  display: flex;
+  margin-top: 2rem;
+}
+
+.skillcard {
+  width: 14rem;
+  height: 8rem;
+  border: 1rem;
+  box-shadow: 0rem 0rem .75rem 0.05rem var(--lightGrey);
+  border-radius: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.skillcard-text {
+  color: var(--darkBlue);
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.scrollmenu {
+  overflow: auto;
+  z-index: 0;
+  /* white-space: nowrap; */
+  padding: 1rem 0 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  border-right: 0.1rem solid var(--blue);
+}
+
+/* .scrollmenu{
+  display: inline-block;
+} */
+
+
+.rubikscube{
+  /* background-image: url("../assets/img/rubikscube.jpg"); */
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------------*/
+
+.svg-wrapper {
+  width: 100px;
+  height: 100px;
+
+}
+svg {
+  transform: rotate(-90deg);
+}
+
+.outer-circle {
+  cx: 20;
+  cy: 15;
+  r: 12; 
+  fill: none; 
+  stroke-dashoffset: 100;
+  stroke: #EEE;
+  stroke-width: 2px;
+}
+
+.inner-circle {
+  stroke: #FE9096;
+  stroke-dasharray: 75.6;
+  cx: 20;
+  cy: 15;
+  r: 12;
+  fill: none; 
+  stroke-width: 2px;
+  transition: 0.4s all ease-in-out;
+}
+
+.card {
+  
+}
+
+  .profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .blog {
+    color: #FE9096;
+  }
+
+  .count {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+  }
+
+  .rubiks, .progress-circle{
+    width: 15rem;
+    font-size: 12px;
+    margin-left: -3.2rem;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+    margin: 0.1rem;
+    border-radius: 1rem;
+}
+
+.svg-circle{
+  grid-area: 1 / 1;
+}
+
+.progress_text{
+}
+
+.progress_percent{
+    font-size: 3rem;
+}
+
+.progress_percent_span{
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: -0.5rem;
+}
+
+/*--------------------------------------------- kleurtjes ------------------------------------*/
+
+.green-txt{
+  color: #68d689;
+}
+
+.red-txt{
+  color: #80c494;
+}
+
+.blue-txt{
+  color: #2fe0ab;
+}
+
+.darkblue-txt{
+  color: rgb(0, 153, 120);
+}
+
+.purple-txt{
+  color: #466b3f;
+}
+

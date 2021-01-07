@@ -1,0 +1,35 @@
+.ldBar {
+  position: absolute;
+  max-width: 50%;
+  background-color: red;
+}
+.ldBar.label-center > .ldBar-label {
+  /* position: absolute; */
+  background-color: red;
+  /* top: 50%;
+  left: 50%; */
+  /* -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  text-shadow: 0 0 3px #fff;
+  opacity: 0%;
+}
+
+/* .ldBar-label:after {
+  content: "dagen";
+  display: inline;
+
+}
+.ldBar.no-percent .ldBar-label:after {
+  content: "";
+} */
+
+.test_img{
+  max-width: 75%;
+  margin-top: 5.5rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.ldBar-label-hidden{
+  visibility: hidden;
+}
