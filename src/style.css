@@ -1,20 +1,13 @@
 
 @import "css/vars.css";
-@import "css/start.css";
-@import "css/home.css";
-@import "css/skill-breakdown.css";
-@import "css/timeperiod.css";
-@import "css/progress.css";
-@import "css/settings.css";
-@import "css/loading-bar.css";
-@import "css/loading-bar.min.css";
-@import "css/profile.css";
-@import "css/register.css";
+@import "css/reset.css";
 @import "style.css";
+@import "css/start.css";
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
 }
 /*stylelint-disable*/
 *,
@@ -23,10 +16,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  font-family: var(--fontFam);
-  color: var(--blue);
-}
 
 /* .hidden {
   visibility: hidden;

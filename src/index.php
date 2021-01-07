@@ -16,46 +16,19 @@ $routes = array(
     'controller' => 'Skills',
     'action' => 'index'
   ),
-  'home' => array(
+  'step1' => array(
     'controller' => 'Skills',
-    'action' => 'home'
+    'action' => 'step1'
   ),
-  'profile' => array(
+  'step2' => array(
     'controller' => 'Skills',
-    'action' => 'profile'
+    'action' => 'step2'
   ),
-  'progress' => array(
+  'step3' => array(
     'controller' => 'Skills',
-    'action' => 'progress'
+    'action' => 'step3'
   ),
-  'firstbreakdown' => array(
-    'controller' => 'Skills',
-    'action' => 'firstbreakdown'
-  ),
-  'secondbreakdown' => array(
-    'controller' => 'Skills',
-    'action' => 'secondbreakdown'
-  ),
-  'thirdbreakdown' => array(
-    'controller' => 'Skills',
-    'action' => 'thirdbreakdown'
-  ),
-  'settings' => array(
-    'controller' => 'Skills',
-    'action' => 'settings'
-  ),
-  'register' => array(
-    'controller' => 'Skills',
-    'action' => 'register'
-  ),
-  'login' => array(
-    'controller' => 'Skills',
-    'action' => 'login'
-  ),
-  'logout' => array(
-    'controller' => 'Skills',
-    'action' => 'logout'
-  )
+  
 );
 
 if (empty($_GET['page'])) {

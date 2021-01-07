@@ -1,14 +1,5 @@
 :root {
-  --white: white;
-  --grey: grey;
-  --lightGrey: rgb(212, 212, 212);
-  --blue: #025486;
-  --darkBlue: #132c40;
-  --textColor: #463636;
-  --cyan: #3d9d9b;
-  --green: #CBF5E0;
-  --red: #fe7672;
-  --fontFam: helvetica, sans-serif;
+  
 }
 
 @custom-media --only-medium-screen (width >= 500px);
