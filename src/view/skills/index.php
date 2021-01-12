@@ -10,25 +10,24 @@
 
 <div class="wrapper">
 
+<video id="test-video" onkeydown="playVideo(event)">
+<source src="assets/test.mp4" type="video/mp4"></video>
 
+<div class='answer'>Is the div visible? No</div>
 <div class="test-div">
     test
 </div>
 
 <div class="test-div2">
     test
+    <div class='tester'>Am I in the view?</div>
 </div>
 
 </div>
   
 
-<button onclick="myFunction()">Replace document</button>
 
-<script>
-function myFunction() {
-  location.replace("https://www.w3schools.com")
-}
-</script>
+
 
    
 

@@ -8,28 +8,44 @@
 
 <div class="container">
 
-<div class="wrapper">
+    <div class="wrapper" id="wrapper">
+    
+    <div class="step1" id="step1">
+        <div class="start-tutorial__title">
+        Start de tutorial door ..
+        </div>
+        <img class="gif" src="assets/controls.gif">
+        <!-- <video id="test-video">
+    <source src="assets/Comp 1.mp4" type="video/mp4"></video>  -->
+    </div>
 
-<div class="test-div2">
-    test
-</div>
 
-<div class="test-div">
-    test
-</div>
-
-
-
-</div>
+    <div class="step2" id="step2">
+    Stap 1
   
 
-<button onclick="myFunction()">Replace document</button>
+    <video class="test-video" id="test-video">
+    <source src="assets/Comp 1.mp4" type="video/mp4"></video> 
+    </div>
 
-<script>
-function myFunction() {
-  location.replace("https://www.w3schools.com")
-}
-</script>
+
+    <div class="step3" id="step3">
+    Stap 2
+    <video class="test-video" id="test-video">
+    <source src="assets/Comp 1.mp4" type="video/mp4"></video> 
+    </div>
+    
+    </div>
+
+    <div class="step4" id="step4">
+    Stap 3
+    <video class="test-video4" id="test-video">
+    <source src="assets/Comp 1.mp4" type="video/mp4"></video> 
+    </div>
+
+
+
+</div>
 
    
 

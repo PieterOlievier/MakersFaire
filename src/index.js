@@ -1,66 +1,137 @@
 require('./style.css');
 {
 
-const urls = [
-  "http://localhost/integration3/src/index.php?page=index",
-  "http://localhost/integration3/src/index.php?page=step1",
-  "http://localhost/integration3/src/index.php?page=step2",
-  "http://localhost/integration3/src/index.php?page=step3"
-];
+const stepNumber = [];
 
-const newUrls = [
-  "http://localhost/integration3/src/index.php?page=index",
-  "http://localhost/integration3/src/index.php?page=step1",
-  "http://localhost/integration3/src/index.php?page=step2",
-  "http://localhost/integration3/src/index.php?page=step3",
-];
+const steps = ["#step1", "#step2", "#step3","#step4"];
 
-const testUrls = [
-  "http://localhost/integration3/src/index.php?page=index",
-  "http://localhost/integration3/src/index.php?page=step3",
-  "http://localhost/integration3/src/index.php?page=step2",
-  "http://localhost/integration3/src/index.php?page=step1"
-];
+let currentUrl = window.location.href
 
 
-  const nextStep = () => {
-    if (event.key == 'ArrowUp') {
-      console.log(window.location.href)
-   url = window.location.href;
-   urlIndex = arraycontainsturtles = (urls.indexOf(url));
-   console.log(arraycontainsturtles = (urls.indexOf(url)))
-   document.location.href = newUrls[urlIndex]
+  const previousStep = () => {
+    if (event.key == 'ArrowLeft') {
+      stepNumber.splice(-1,1)
+      console.log(stepNumber)
+      location.href = steps[stepNumber.length];
+      currentUrl = window.location.href
+      console.log(currentUrl)
+    //playCorrectVideo(currentUrl)
   }
    
   }
 
-  const previousStep = () => {
-    if (event.key == 'ArrowDown') {
-    console.log(window.location.href)
-    url = window.location.href;
-    urlIndex = arraycontainsturtles = (urls.indexOf(url));
-    console.log(arraycontainsturtles = (urls.indexOf(url)))
-    document.location.href = newUrls[urlIndex]
+  const nextStep = () => {
+    if (event.key == 'ArrowRight') {
+    const newStep = stepNumber.push("1")
+    console.log(stepNumber)
+    location.href = steps[stepNumber.length];
+    currentUrl = window.location.href
+    console.log(currentUrl)
+    //playCorrectVideo(currentUrl)
     }
    }
+
+
+
+
+
+
+
+
+// check 60 keer per seconde ofdat element in viewport is met requestanimationframe
+// als dit true weergeeft, haal je de vidoe op en kan je hem laten afspelen en pauzeren
+
+
+
+
+  function checkKey(e) {
+    console.log("uitgevoerd")
+    var video = document.getElementById('test-video');  
+    var key = e.which || e.keyCode;
+    if (key === 112){
+      video.paused ? video.play() : video.pause();
+    };
+  }
+
+const uitvoeren = () =>{
+  document.addEventListener("keypress", displayDate);
+
+function displayDate() {
+  console.log("uitgevoerd")
+}
+}
+
+
+
+ 
+
+function elementInViewport(myElement) {
+  
+  var bounding = myElement.getBoundingClientRect();
+  var myElementHeight = myElement.offsetHeight;
+  var myElementWidth = myElement.offsetWidth;
+
+    var bounding = myElement.getBoundingClientRect();
+
+    if (bounding.top >= -myElementHeight 
+        && bounding.left >= -myElementWidth
+        && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth
+        && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight) {
+
+        console.log('Element is in the viewport!');
+        document.addEventListener("keypress", checkKey);
+        
+    } else {
+
+        console.log('Element is NOT in the viewport!');
+    }
+}
+
+
+
+function repeatOften() {
+
+  //let el = document.querySelector(".test-video")
+  //var myElement = document.querySelector(".test-video")
+  //console.log(myElement)
+  //console.log(document.querySelector(".test-video"))
+  //elementInViewport(myElement)
+  //console.log(elementInViewport())
+
+  const spanList = [...document.querySelectorAll(".test-video")];
+  //console.log(spanList)
+
+  spanList.forEach(element => elementInViewport(element));
+  
+  
+  requestAnimationFrame(repeatOften);
+}
+requestAnimationFrame(repeatOften);
+
+
+
 
 
   /*---------------------------------------------------------------------------------------------------------------------------*/
 
 
   const init = () => {
+
+    //document.addEventListener("keypress", checkUrl());
    
     document.addEventListener('keydown', (event) => {
-      console.log("keydown")
+      //console.log("keydown")
       // document.location.href = "http://localhost/integration3/src/index.php?page";
       nextStep()
   });
 
   document.addEventListener('keyup', (event) => {
-    console.log("keyup")
+    //console.log("keyup")
     // document.location.href = "http://localhost/integration3/src/index.php?page";
     previousStep()
 });
+
+
 
 
   };
