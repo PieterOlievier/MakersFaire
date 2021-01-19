@@ -1,0 +1,44 @@
+.index-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6 , 1fr) 2rem;
+    height: 100vh;
+    padding: 3rem;
+    padding-top: 0rem;
+  }
+
+  .index-logo{
+      grid-column: 1 / span 3;
+      grid-row: 2;
+      max-width: 100%;
+  }
+
+  .index-text{
+    background-color: var(--red);
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 5;
+    border: 1rem solid var(--red);
+    border-bottom-left-radius: 15rem;
+    margin-top: 1.5rem;
+}
+
+  .header-img{
+      /* grid-column: 3 / span 8;
+      grid-row: 1 / span 4; */
+      grid-area: 1 / 3 / span 3 / span 8;
+      max-width: 100%;
+  }
+
+  .index-circles{
+      background-color: violet;
+      grid-row: 1 / span 5;
+      grid-column: 11 / span 2;
+      display: flex;
+  }
+
+  .index-cta{
+      background-color: wheat;
+      grid-row: 6 / span 2;
+      grid-column: 11 / span 2;
+      font-family: 'Nunito Sans', sans-serif;
+  }

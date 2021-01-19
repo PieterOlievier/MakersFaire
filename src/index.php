@@ -13,19 +13,19 @@ if (file_exists("../.env")) {
 
 $routes = array(
   'index' => array(
-    'controller' => 'Skills',
+    'controller' => 'Steps',
     'action' => 'index'
   ),
-  'step1' => array(
-    'controller' => 'Skills',
-    'action' => 'step1'
+  'tutorial' => array(
+    'controller' => 'Steps',
+    'action' => 'tutorial'
   ),
   'step2' => array(
-    'controller' => 'Skills',
+    'controller' => 'Steps',
     'action' => 'step2'
   ),
   'step3' => array(
-    'controller' => 'Skills',
+    'controller' => 'Steps',
     'action' => 'step3'
   ),
   

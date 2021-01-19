@@ -4,7 +4,7 @@ require_once __DIR__ . '/Controller.php';
 require_once __DIR__ . '/../dao/SkillDAO.php';
 
 
-class SkillsController extends Controller
+class StepsController extends Controller
 {
 
   private $skillDAO;
@@ -19,7 +19,7 @@ class SkillsController extends Controller
   
   }
 
-  public function step1()
+  public function tutorial()
   {
   
   }

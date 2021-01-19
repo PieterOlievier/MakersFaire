@@ -2,13 +2,31 @@
 @import "css/vars.css";
 @import "css/reset.css";
 @import "style.css";
-@import "css/start.css";
+@import "css/tutorial.css";
+@import "css/index.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap');
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-
 }
+
+@font-face {
+  font-family: 'Cocogoose';
+  src:  url('assets/fonts/Cocogoose-Pro-Light-trial.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src:  url('assets/fonts/AvenirNext-Regular-08.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Retrocycles';
+  src:  url('assets/fonts/Retrocycles.woff') format('woff'),
+}
+
+
 /*stylelint-disable*/
 *,
 *:before,
@@ -23,4 +41,4 @@ html {
 
 .hidden {
   display: none;
-}
+} 

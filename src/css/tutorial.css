@@ -1,0 +1,299 @@
+
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  
+  overflow-x:scroll;
+  white-space: nowrap;
+  float:left;
+  position: relative;
+}
+
+.navigatie{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.nav-logo{
+ height: 100%;
+}
+
+.nav-items{
+  display: flex;
+}
+
+.nav-item{
+  margin-left: 3rem;
+}
+
+.wrapper{
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    float: left;
+    position: relative;
+    display: flex;
+    color: white;
+  }
+
+
+
+
+.test-div{
+  background-color: gray;
+  height: 100vh;
+  width: 100vw;
+}
+
+.intro{
+  display: inline-block;
+  padding: 1rem;
+  min-width: 100vw;
+  box-shadow: 2px 2px 4px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.start-tutorial__title{
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+
+.step-title{
+  color: black;
+  grid-row: 1;
+  grid-column: 1 / span 12;
+  font-family: 'Avenir';
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.video-tutorial{
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.step{
+  display: inline-block;
+  background: black;
+  height: 80vh;
+  min-width: 100%;
+  box-shadow: 2px 2px 4px #000;
+  display: flex;
+  flex-direction: column;
+}
+/* --------------------------------- INTRO --------------------------------- */
+
+
+#intro{
+  display: grid;
+  grid-template-columns: repeat(12 , 1fr);
+  grid-template-rows: repeat(6,1fr);
+  background-color: white;
+}
+
+.intro-gif{
+  grid-column: 3 / span 9;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+
+.intro-step{
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.shop-link{
+  background-color: red;
+  grid-column: 10 / span 12;
+  grid-row: 3 / span 5;
+}
+
+
+/* --------------------------------- FIETS --------------------------------- */
+
+#fiets{
+  display: grid;
+  grid-template-columns: repeat(12 , 1fr);
+  grid-template-rows: repeat(6,1fr);
+  background-color: white;
+  margin: none;
+}
+
+.fiets-img{
+  grid-column: 3 / span 10;
+  grid-row: 3 / span 4;
+  max-width: 75%;
+}
+
+.fiets-kiezen__detail{
+  grid-column: 11 / span 12;
+  grid-row: 1 / span 5;
+}
+
+.fiets-text{
+  color: black;
+  font-size: 2rem;
+  grid-column: 1 / span 3;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.img-detail{
+  width: 100%;
+}
+
+/* --------------------------------- VOORBEREIDING --------------------------------- */
+
+#voorbereiding{
+  display: grid;
+  grid-template-columns: repeat(12 , 1fr);
+  grid-template-rows: repeat(6,1fr);
+  background-color: white;
+  margin: none;
+}
+
+.voorbereiding-img{
+  grid-area: 1 / 4 / span 6 / span 8;
+  max-height: 100%;
+
+}
+
+.voorbereiding-detail{
+  grid-row: 5 / span 6;
+  grid-column: 1 / span 2;
+  max-width: 100%;
+}
+
+/* --------------------------------- STEP1 --------------------------------- */
+
+#step1{
+  display: grid;
+  grid-template-columns: repeat(10 , 10vw);
+  grid-template-rows: repeat(6,1fr);
+  background-color: white;
+  margin: none;
+}
+
+.step-title__test{
+  background-color: red;
+  grid-row: 1;
+  grid-column: 1 / span 3;
+  display: flex;
+  color: black;
+  font-size: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Cocogoose';
+}
+
+.step-number{
+  width: 10rem;
+  height: 10rem;
+  background-color: blue;
+  border: transparent 0.1rem solid;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-title-step{
+  font-family: 'Retrocycles';
+  font-size: 5rem;
+}
+
+.step1-img{
+  grid-area: 4 / 2 / span 4 / span 3;
+  max-width: 100%;
+}
+
+.step1-text{
+  background-color: teal;
+  grid-row: 2;
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: normal;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+
+.control-button1__text{
+  grid-column: 3 / span 2;
+  grid-row: 3;
+  color: black;
+  font-size: 1.8rem;
+  white-space: normal;
+  padding: 3rem;
+}
+
+.control-button2__text{
+  padding: 3rem;
+  grid-column: 3 / span 2;
+  grid-row: 6;
+  color: black;
+  font-size: 1.8rem;
+  white-space: normal;
+}
+
+.step1-instruction__video{
+  background-color: tomato;
+  grid-row: 2 / span 4;
+  grid-column: 6 / span 4;
+}
+
+.step1-detail{
+  background-color: turquoise;
+  grid-row: 1 / span 5;
+  grid-column: 8 / span 2;
+  z-index: 0;
+}
+
+
+
+
+
+#step2{
+  background: #942818;
+}
+
+
+video{
+  max-height: 50vh;
+}
+
+.gif{
+  width: 50vw;
+  
+}
+
+
+/* --------------------------------- PROGRESS --------------------------------- */
+
+.progressbar{
+  background-color: var(--red);
+  height: 10vh;
+}

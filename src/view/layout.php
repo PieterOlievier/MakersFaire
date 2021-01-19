@@ -32,6 +32,10 @@
     <?php echo $content; ?>
   </div>
   <?php echo $js; ?>
+  <!-- <script type="text/javascript" src="skrollr.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init();
+	</script> -->
 </body>
 
 </html>

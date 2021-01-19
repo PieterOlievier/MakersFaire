@@ -1,5 +1,10 @@
+
 :root {
+    --red: #932718; 
+    --titles : 'Steelworks';
   
 }
+
+
 
 @custom-media --only-medium-screen (width >= 500px);

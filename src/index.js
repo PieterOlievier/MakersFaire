@@ -1,9 +1,12 @@
 require('./style.css');
+//  require(['skrollr'], function(skrollr){
+//  	var s = skrollr.init();
+//  });
 {
 
 const stepNumber = [];
 
-const steps = ["#step1", "#step2", "#step3","#step4"];
+const steps = ["#intro", "#fiets","#voorbereiding", "#step1", "#step2","#step3"];
 
 let currentUrl = window.location.href
 
@@ -36,8 +39,6 @@ let currentUrl = window.location.href
 
 
 
-
-
 // check 60 keer per seconde ofdat element in viewport is met requestanimationframe
 // als dit true weergeeft, haal je de vidoe op en kan je hem laten afspelen en pauzeren
 
@@ -53,13 +54,13 @@ let currentUrl = window.location.href
     };
   }
 
-const uitvoeren = () =>{
-  document.addEventListener("keypress", displayDate);
+//   const uitvoeren = () =>{
+//   document.addEventListener("keypress", displayDate);
 
-function displayDate() {
-  console.log("uitgevoerd")
-}
-}
+// function displayDate() {
+//   console.log("uitgevoerd")
+// }
+// }
 
 
 
@@ -80,10 +81,11 @@ function elementInViewport(myElement) {
 
         console.log('Element is in the viewport!');
         document.addEventListener("keypress", checkKey);
-        
+        return true;
     } else {
 
         console.log('Element is NOT in the viewport!');
+        return false;
     }
 }
 
@@ -92,16 +94,15 @@ function elementInViewport(myElement) {
 function repeatOften() {
 
   //let el = document.querySelector(".test-video")
-  //var myElement = document.querySelector(".test-video")
+  var myElement = document.querySelector(".test-video")
   //console.log(myElement)
   //console.log(document.querySelector(".test-video"))
-  //elementInViewport(myElement)
-  //console.log(elementInViewport())
+  elementInViewport(myElement)
 
-  const spanList = [...document.querySelectorAll(".test-video")];
+  //const spanList = [...document.querySelectorAll"(".test-video")];
   //console.log(spanList)
 
-  spanList.forEach(element => elementInViewport(element));
+  //spanList.forEach(element => elementInViewport(element));
   
   
   requestAnimationFrame(repeatOften);
