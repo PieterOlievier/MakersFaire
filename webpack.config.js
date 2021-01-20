@@ -21,7 +21,7 @@ module.exports = (env, { mode }) => {
     module: {
       rules: [
         {
-          test: /\.(jpe?g|png|svg|webp)$/,
+          test: /\.(jpe?g|png|svg|webp|gif)$/,
           use: {
             loader: 'file-loader',
             options: {

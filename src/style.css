@@ -12,8 +12,13 @@ html {
 }
 
 @font-face {
-  font-family: 'Cocogoose';
-  src:  url('assets/fonts/Cocogoose-Pro-Light-trial.woff') format('woff'),
+  font-family: 'CocogooseBold';
+  src:  url('assets/fonts/Cocogoose-Pro-trial.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Retrocycles';
+  src:  url('assets/fonts/Retrocycles.woff') format('woff'),
 }
 
 @font-face {
@@ -22,8 +27,8 @@ html {
 }
 
 @font-face {
-  font-family: 'Retrocycles';
-  src:  url('assets/fonts/Retrocycles.woff') format('woff'),
+  font-family: 'Steelworks';
+  src:  url('assets/fonts/Steelworks-Vintage-Demo.woff') format('woff'),
 }
 
 

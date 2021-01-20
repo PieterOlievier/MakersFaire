@@ -52,9 +52,13 @@
     <div class="step" id="voorbereiding">
         <p class="step-title">voorbereiding</p>
 
+        <p class="voorbereiding-text">
+        Het is gemakkelijk om eerst alle onderdelen uit de doos te halen en op de grond te leggen.
+        Op deze manier vind je bij elke stap snel de onderdelen.
+        <p>
         <img src="assets/img/voorbereiding.png" class="voorbereiding-img">
 
-        <img src="assets/img/voorbereiding-detail.png" class="voorbereiding-detail">
+        <!-- <img src="assets/img/voorbereiding-detail.png" class="voorbereiding-detail"> -->
     </div>
 
     <div class="step" id="step1">
