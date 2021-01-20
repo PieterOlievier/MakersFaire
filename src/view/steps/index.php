@@ -72,9 +72,19 @@
     9000 gent
     </div>
     
-    
     <img class="event-detail" src="assets/img/event-detail.png">
 
+    <div class="event-sponsor-info">
+        <img src="assets/img/index-logo.png" class="event-sponsor-info__logo">
+        <div class="event-organiser">is een evenement georganiseerd door
+            <span class="organiser">Maker Faire Gent</span>
+        </div>
+    </div>
 
+</section>
+
+<section class="sponsors">
+    <p class="sponsors-text">In samenwerking met</p>
+    <img src="assets/img/sponsors.png" class="sponsors-img">
 </section>
 

@@ -3,8 +3,8 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6 , 1fr);
     height: 100vh;
-    padding-bottom: 0rem;
-    padding-top: 0rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
   }
 
   .index-logo{
@@ -20,8 +20,9 @@
     grid-row: 3 / span 5;
     border: 1rem solid var(--red);
     border-bottom-left-radius: 15rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     padding: 1.5rem;
+    padding-top: 1rem;
     margin-left: 5rem;
     font-family: 'Avenir';
     font-size: 1.8rem;
@@ -84,13 +85,14 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
+      padding-top: 5rem;
   }
 
 
   .event-grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6 , 1fr) 2rem;
+    grid-template-rows: repeat(6 , 1fr);
     height: 100vh;
     padding-top: 0rem;
     padding-top: 0rem;
@@ -103,10 +105,10 @@
 
   .event-title{
       grid-row: 1;
-      grid-column: 4 / span 4;
+      grid-column: 1 / span 7;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       font-family: 'Retrocycles';
       font-size: 10rem;
       border: 1rem solid black;
@@ -114,7 +116,8 @@
       border-left: none;
       border-bottom-right-radius: 3rem;
       border-top-right-radius: 3rem;
-      margin-top: 3rem;
+      margin-top: 5rem;
+      padding-right: 5rem;
   }
 
   .event-info{
@@ -173,4 +176,57 @@
       grid-row: 1;
       grid-column: 1 / span 2;
       max-width: 100%;
+  }
+
+  .event-sponsor-info{
+      display: flex;
+      flex-direction: column;
+      grid-column: 9 / span 4;
+      grid-row: 4 / span 3;
+      align-items: center;
+      text-align: center;
+      margin-left: 3rem;
+  }
+
+  .event-sponsor-info__logo{
+      max-width: 50%;
+      margin-bottom: 3rem;
+  }
+
+  .event-organiser{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-family: 'Avenir';
+  }
+
+  .organiser{
+      color: var(--red);
+      font-size: 5rem;
+      font-weight: 700;
+      margin-right: 2rem;
+  }
+
+
+  .sponsors{
+      background-color: var(--red);
+      height: 20vh;
+      display: flex;
+      flex-direction: column;
+      padding: 3rem;
+      padding-bottom: 0rem;
+      align-items: center;
+      justify-content:space-between;
+  }
+
+  .sponsors-text{
+      color: white;
+      font-family: 'Retrocycles';
+      font-size: 3rem;
+  }
+
+  .sponsors-img{
+      max-width: 90%;
   }
