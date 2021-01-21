@@ -90,9 +90,13 @@
         </div>
         <img src="assets/img/gashendel.png" class="step1-img">
         <div class="control-button2__text">
-        Om het jou gemakkelijk te maken is er voor sommige stappen een filmpje voorzien.</br>
-        Om het af te spelen druk je op de bovenste knop.
+        Deze gashendel kan je nu gebruiken om naar de volgende stappen van het proces te gaan.
+Druk hiervoor op de onderste knop.
         </div>
+
+        
+        <img class="step1-detail" src="assets/img/stap1-detail.png">
+
 
         <div class="step1-instruction__video" controls>
         <video  id="step1-clip">
@@ -107,12 +111,17 @@
 
         
 
-        <!-- <div class="step1-detail">test</div> -->
+        
         </section>
 
 
      <section class="step" id="step2">
-     <h2 class="step-title">Stap 2</h2>
+     <h2 class="step-title hidden">Stap 2</h2>
+     <div class="step-title__test">
+            STAP
+            <div class="step-number">II</div>
+            <p class="step-title-step">tandwiel</p>
+        </div>
         
         <!-- <img class="stap2-img" src="assets/img/stap2.png"> -->
         
@@ -147,14 +156,24 @@
 
 
         <section class="step" id="step3">
-         <h2 class="step-title">Stap 3</h2>
+         <h2 class="step-title hidden">Stap 3</h2>
+         <div class="step-title__test">
+            STAP
+            <div class="step-number">III</div>
+            <p class="step-title-step">motor</p>
+        </div>
         
      
          </section>
 
 
          <section class="step" id="step4">
-         <h2 class="step-title">Stap 4</h2>
+         <h2 class="step-title hidden">Stap 4</h2>
+         <div class="step-title__test">
+            STAP
+            <div class="step-number">IV</div>
+            <p class="step-title-step">carburator</p>
+        </div>
 
          <div class="step4-t1">
              <p class="step4-step__title">1</p>
@@ -181,7 +200,12 @@
 
 
          <section class="step" id="step5">
-         <h2 class="step-title">Stap 5</h2>
+         <h2 class="step-title hidden">Stap 5</h2>
+         <div class="step-title__test">
+            STAP
+            <div class="step-number">V</div>
+            <p class="step-title-step">brandstoftank</p>
+        </div>
 
          
          <img class="step5-img" src="assets/img/stap5.png">
@@ -212,7 +236,12 @@
 
 
          <section class="step" id="step6">
-         <h2 class="step-title">Stap 6</h2>
+         <h2 class="step-title hidden">Stap 6</h2>
+         <div class="step-title__test">
+            STAP
+            <div class="step-number">VI</div>
+            <p class="step-title-step">bobine</p>
+        </div>
 
          <div class="step6-text">
          Super we hebben al twee van de drie ingredienten om de motor te laten werken. <span class="highlight">Zuurstof en Benzine.</span>
