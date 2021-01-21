@@ -17,9 +17,9 @@ class DAO {
 		if (empty(self::$sharedPDO)) {
 
 			$dbHost = getenv('PHP_DB_HOST') ?: "mysql";
-      $dbName = getenv('PHP_DB_DATABASE') ?: "planit";
-      $dbUser = getenv('PHP_DB_USERNAME') ?: "planner";
-	  $dbPass = getenv('PHP_DB_PASSWORD') ?: "password";
+      $dbName = getenv('PHP_DB_DATABASE') ?: "minimotomayhem";
+      $dbUser = getenv('PHP_DB_USERNAME') ?: "minimotomayhem";
+	  $dbPass = getenv('PHP_DB_PASSWORD') ?: "minimotomayhempassword";
 
 			self::$sharedPDO = new PDO("mysql:host=" . $dbHost . ";dbname=" . $dbName, $dbUser, $dbPass);
 			self::$sharedPDO->exec("SET CHARACTER SET utf8");
