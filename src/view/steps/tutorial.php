@@ -287,11 +287,11 @@ Voor het ontsteken van de brandstof in de verbrandingsmotor genereerd de bougie 
          <img class="step7-img" src="assets/img/stap7.jpg">
 
             
-            <div class="step7-clip">
+            
             <video id="step7-clip">
                 <source src="assets/sparkplug.mp4" type="video/mp4">
             </video>
-            </div>
+            
             
 
             
