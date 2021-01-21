@@ -6,7 +6,7 @@ require('./style.css');
 
 const stepNumber = [];
 
-const steps = ["#intro", "#fiets","#voorbereiding", "#step1", "#step2","#step3"];
+const steps = ["#intro", "#fiets","#voorbereiding", "#step1", "#step2","#step3","#step4","#step5","#step6","#step7"];
 
 let currentUrl = window.location.href
 

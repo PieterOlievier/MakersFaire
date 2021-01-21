@@ -86,6 +86,8 @@
   font-family: 'Avenir';
   font-size: 5rem;
   font-weight: 700;
+  padding-left: 3rem;
+  margin-top: 2rem;
 }
 
 .video-tutorial{
@@ -109,17 +111,18 @@
 
 #intro{
   display: grid;
-  grid-template-columns: repeat(12 , 1fr);
+  grid-template-columns: repeat(10 , 10vw);
   grid-template-rows: repeat(6,1fr);
   background-color: white;
+  margin: none;
 }
 
 .intro-gif{
-  grid-column: 3 / span 9;
-  grid-row: 2;
+  grid-column: 3 / span 5;
+  grid-row: 3;
   display: flex;
   align-items: center;
-  max-width: 100%;
+  max-width: 85%;
 }
 
 
@@ -129,9 +132,32 @@
 }
 
 .shop-link{
-  background-color: red;
-  grid-column: 10 / span 12;
-  grid-row: 3 / span 5;
+  grid-column: 8 / span 3;
+  grid-row: 3 / span 4;
+  font-family: 'Avenir';
+  color: black;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.shop-link__button{
+  font-family: 'Retrocycles';
+  font-size: 5rem;
+  margin-top: 3rem;
+  text-decoration: underline;
+  color: var(--red);
+  padding-bottom: 2rem;
+}
+
+.intro-detail{
+ grid-column: 8 / span 3;
+  grid-row: 3 / span 2;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 
@@ -147,7 +173,7 @@
 
 .fiets-img{
   grid-column: 3 / span 10;
-  grid-row: 3 / span 4;
+  grid-row: 2 / span 4;
   max-width: 75%;
 }
 
@@ -158,10 +184,14 @@
 
 .fiets-text{
   color: black;
-  font-size: 2rem;
+  font-size: 1.8rem;
   grid-column: 1 / span 3;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  grid-row: 2;
+  white-space: normal;
+  margin-left: 3rem;
+  font-family: 'Avenir';
+  line-height: 2.2rem;
+  padding-right: 3rem;
 }
 
 .img-detail{
@@ -179,22 +209,37 @@
 }
 
 .voorbereiding-text{
-  background-color: turquoise;
-  grid-row: 2 / span 2;
-  grid-column: 2 / span 2;
+  grid-row: 1;
+  grid-column: 1 / span 3;
+  white-space: normal;
+  font-family: 'Avenir';
+  color: black;
+  font-size: 1.8rem;
+  margin-left: 3rem;
+  display: flex;
+  justify-content: c;
 }
+
 
 .voorbereiding-img{
-  background-color: rebeccapurple;
-  /* grid-area: 4 / 4 / span 6 / span 8; */
-  grid-column: 3 / span 5;
+  grid-column: 3 / span 7;
+  grid-row: 1 / span 2;
+  max-width: 78%;
+  display: flex;
+  justify-items: center;
 }
 
-/* .voorbereiding-detail{
-  grid-row: 5 / span 6;
+.voorbereiding-detail{
+  grid-row: 6;
   grid-column: 1 / span 2;
   max-width: 100%;
-} */
+}
+
+.voorbereiding-detail2{
+  grid-row: 1;
+  grid-column: 9 / span 2;
+  max-width: 100%;
+}
 
 /* --------------------------------- STEP1 --------------------------------- */
 
@@ -285,12 +330,87 @@
 
 
 
-
+/* --------------------------------- STEP2 --------------------------------- */
 
 #step2{
-  background: #942818;
+  background-image: url('../assets/img/stap2.jpg');
+  background-position: center; 
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(10 , 10vw);
+  grid-template-rows: repeat(6,1fr);
+  background-color: white;
+  font-family: 'Avenir';
+  color: black;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-right: 3rem;
 }
 
+.step2-step__title{
+  font-family: 'Retrocycles';
+  font-size: 15rem;
+  color: var(--red);
+  margin-right: 2rem;
+  opacity: 35%;
+}
+
+.step2-step__title{
+  font-family: 'Retrocycles';
+  font-size: 10rem;
+  color: var(--red);
+  margin-right: 2rem;
+  opacity: 35%;
+}
+
+.step2-t1{
+  grid-row: 2;
+  grid-column: 5 / span 2;
+  white-space: normal;
+  display: flex;
+  align-items: center;
+}
+
+.step2-t2{
+  grid-row: 5;
+  grid-column: 6 / span 2;
+  white-space: normal;
+  display: flex;
+  align-items: center;
+}
+
+.step2-t3{
+  grid-row: 2;
+  grid-column: 8 / span 2;
+  white-space: normal;
+  display: flex;
+  align-items: center;
+}
+
+.step2-t4{
+  grid-row: 5;
+  grid-column: 9 / span 2;
+  white-space: normal;
+  display: flex;
+  align-items: center;
+  padding-right: 5rem;
+}
+
+.step2-tip{
+  grid-row: 1;
+  grid-column: 6 / span 3;
+  white-space: normal;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+
+.stap2-img{
+  grid-row: 1;
+  grid-column: 2 / span 10;
+  max-width: 90%;
+}
 
 video{
   max-height: 50vh;
@@ -299,6 +419,144 @@ video{
 .gif{
   width: 50vw;
   
+}
+/* --------------------------------- STEP3 --------------------------------- */
+
+
+/* --------------------------------- STEP4 --------------------------------- */
+#step4{
+  background-image: url('../assets/img/stap4.png');
+  background-position: center; 
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(10 , 10vw);
+  grid-template-rows: repeat(6,1fr);
+  background-color: white;
+  font-family: 'Avenir';
+  color: black;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-right: 3rem;
+}
+
+.step4-step__title{
+  font-family: 'Retrocycles';
+  font-size: 10rem;
+  color: var(--red);
+  margin-right: 2rem;
+  opacity: 35%;
+}
+
+.step4-t1{
+  grid-row: 2;
+  grid-column: 2 / span 2;
+  white-space: normal;
+  display: flex;
+}
+
+.step4-step__title-tip{
+  font-family: 'Retrocycles';
+  font-size: 10rem;
+  color: white;
+  margin-right: 2rem;
+  opacity: 35%;
+}
+
+.step4-tip{
+  grid-row: 3 / span 2;
+  grid-column: 1 / span 3;
+  white-space: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 3rem;
+  padding: 5rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.step4-t2{
+  grid-row: 5;
+  grid-column: 2 / span 2;
+  white-space: normal;
+  display: flex;
+}
+
+.step4-t3{
+  grid-row: 6;
+  grid-column: 2 / span 2;
+  white-space: normal;
+  display: flex;
+  margin-top: 3rem;
+}
+
+/* --------------------------------- STEP5 --------------------------------- */
+
+
+#step5{
+  display: grid;
+  grid-template-columns: repeat(10 , 10vw);
+  grid-template-rows: repeat(6,1fr);
+  background-color: white;
+  font-family: 'Avenir';
+  color: black;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-right: 3rem;
+}
+
+.step5-img{
+  grid-row: 1 / span 3;
+  grid-column: 5 / span 5;
+  max-width: 95%;
+}
+
+.step5-text{
+  grid-row: 2;
+  grid-column: 1 / span 3;
+  white-space: normal;
+  padding-left: 3rem;
+  margin-bottom: 7.5rem;
+}
+
+.step5-t1{
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  white-space: normal;
+  display: flex;
+  padding-left: 3rem;
+}
+
+.step5-t2{
+  grid-row: 3;
+  grid-column: 3 / span 2;
+  white-space: normal;
+  display: flex;
+}
+
+.step5-detail{
+  grid-row: 4/ span 3;
+  grid-column: 2/ span 2;
+  max-width: 85%;
+  padding-top: 3rem;
+}
+
+/* --------------------------------- STEP6 --------------------------------- */
+
+
+#step6{
+  background-image: url('../assets/img/stap6.jpg');
+  background-position: center; 
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(10 , 10vw);
+  grid-template-rows: repeat(6,1fr);
+  background-color: white;
+  font-family: 'Avenir';
+  color: black;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-right: 3rem;
 }
 
 
