@@ -74,7 +74,7 @@
      </section>
 
         <section class="step" id="step1">
-        <h2 class="step-title">step1</h2>
+        <h2 class="step-title hidden">step1</h2>
         <div class="step-title__test">
             STAP
             <div class="step-number">I</div>
@@ -94,8 +94,18 @@
         Om het af te spelen druk je op de bovenste knop.
         </div>
 
-        <div class="step1-instruction__video">
+        <div class="step1-instruction__video" controls>
+        <video  id="step1-clip">
+                <source src="assets/gashendel.mp4" type="video/mp4">
+            </video>
         </div>
+
+        <img class="play-button" src="assets/img/play-button.png">
+    
+        <p class="play-button__text">Een stap met een filmpje kan je herkennen aan dit icoon.
+        Probeer het eens uit!</p>
+
+        
 
         <!-- <div class="step1-detail">test</div> -->
         </section>
@@ -204,8 +214,107 @@
          <section class="step" id="step6">
          <h2 class="step-title">Stap 6</h2>
 
+         <div class="step6-text">
+         Super we hebben al twee van de drie ingredienten om de motor te laten werken. <span class="highlight">Zuurstof en Benzine.</span>
+         </div>
+
+         <div class="step6-interaction">
+         <p class="step6-interaction__question">Wat hebben we nog nodig?</p>
+         <div class="step6-interaction__answer">Ontsteking</div>
+         <p>Hiervoor zullen we bobine monteren.</p>
+         </div>
          
+         <div class="step6-t1">
+         Plaats de bobine op de diagonale bar van het frame onder de tank. Monteren doe je opnieuw met de halve cilinders.
+         </div>
+
+         <div class="step6-tech-show">
+         <p class="step6-tech__question">Maar wat is een bobine?</p>
+             Bobientje ken ik
+                
+         </div>
+
+         <div class="step6-tech hidden">
+         Een bobine is een transformator die wordt gebruikt in het ontstekingssysteem van verbrandingsmotoren. 
+Voor het ontsteken van de brandstof in de verbrandingsmotor genereerd de bougie een vonk. De bobine levert de spanning die daarvoor nodig is. 
+
+            <div class="step6-tech-hide">X</div>
+
+         </div>
          
+         <img class="step6-detail" src="assets/img/stap6-detail.png">
+
+         
+
+         
+     
+         </section>
+
+
+         <section class="step" id="step7">
+         <h2 class="step-title">Stap 7</h2>
+
+         
+         <img class="step7-img" src="assets/img/stap7.jpg">
+
+            
+            <div class="step7-clip">
+            <video id="step7-clip">
+                <source src="assets/sparkplug.mp4" type="video/mp4">
+            </video>
+            </div>
+            
+
+            
+                <div class="step7-t1">
+                <p class="step4-step__title">1</p>
+                Neem eerst de bougie en draai deze in de motor.
+                </div>
+
+                <div class="step7-t2">
+                <p class="step4-step__title">2</p>
+                Neem vervolgens het uiteinde van de kabel die uit de bobine komt en druk deze stevig op de bovenkant van de bougie.
+                </div>
+            
+
+         
+     
+         </section>
+
+         <section class="step" id="step8">
+         <h2 class="step-title">Stap 8</h2>
+
+        
+        <img class="step8-img" src="assets/img/stap8.png">
+
+        <div class="step8-text">
+        Nu gaan we de beweging van de motor overbrengen naar het achterwiel van de fiets.</br>
+        Dit doen we door de ketting te monteren.
+        </div>
+
+        <div class="step8-t1">
+        <p class="step4-step__title">1</p>
+        Leg de ketting rond het tandwiel van de motor en die op het achterwiel.
+        </div>
+
+        <div class="step8-t2">
+        <p class="step4-step__title">2</p>
+        Neem de verbindingsschakel en schuif de pinnen ervan door de ketting langs de achterkant zodat ze naar de linkerkant van de fiets wijzen. 
+        </div>
+
+        <div class="step8-t3">
+        <p class="step4-step__title">3</p>
+        Schuif vervolgens de andere helft van de schakel over de 2 pinnen
+        </div>
+
+        <div class="step8-t4">
+        <p class="step4-step__title">4</p>
+        Om de verbinding te finaliseren gaan we het slotje bevestigen op de pinnen. 
+        schuif het plaatje over de pinnen en druk het stevig naar links tot dat het klik zegt.
+        </div>
+         
+            
+
          
      
          </section>

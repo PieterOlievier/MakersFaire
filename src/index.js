@@ -6,7 +6,7 @@ require('./style.css');
 
 const stepNumber = [];
 
-const steps = ["#intro", "#fiets","#voorbereiding", "#step1", "#step2","#step3","#step4","#step5","#step6","#step7"];
+const steps = ["#intro", "#fiets","#voorbereiding", "#step1", "#step2","#step3","#step4","#step5","#step6","#step7","#step8"];
 
 let currentUrl = window.location.href
 
@@ -18,7 +18,6 @@ let currentUrl = window.location.href
       location.href = steps[stepNumber.length];
       currentUrl = window.location.href
       console.log(currentUrl)
-    //playCorrectVideo(currentUrl)
   }
    
   }
@@ -30,7 +29,6 @@ let currentUrl = window.location.href
     location.href = steps[stepNumber.length];
     currentUrl = window.location.href
     console.log(currentUrl)
-    //playCorrectVideo(currentUrl)
     }
    }
 
@@ -45,46 +43,71 @@ let currentUrl = window.location.href
 
 
 
-  function checkKey(e) {
+  function checkKeyStep1(e) {
     console.log("uitgevoerd")
-    var video = document.getElementById('test-video');  
+    var video = document.getElementById('step1-clip');  
     var key = e.which || e.keyCode;
     if (key === 112){
       video.paused ? video.play() : video.pause();
     };
   }
 
-//   const uitvoeren = () =>{
-//   document.addEventListener("keypress", displayDate);
+  function checkKeyStep7(e) {
+    console.log("uitgevoerd")
+    var video = document.getElementById('step7-clip');  
+    var key = e.which || e.keyCode;
+    if (key === 112){
+      video.paused ? video.play() : video.pause();
+    };
+  }
 
-// function displayDate() {
-//   console.log("uitgevoerd")
-// }
-// }
 
 
 
  
 
-function elementInViewport(myElement) {
+function step1ClipInViewport(step1Clip) {
   
-  var bounding = myElement.getBoundingClientRect();
-  var myElementHeight = myElement.offsetHeight;
-  var myElementWidth = myElement.offsetWidth;
+  var bounding = step1Clip.getBoundingClientRect();
+  var myElementHeight = step1Clip.offsetHeight;
+  var myElementWidth = step1Clip.offsetWidth;
 
-    var bounding = myElement.getBoundingClientRect();
+    var bounding = step1Clip.getBoundingClientRect();
 
     if (bounding.top >= -myElementHeight 
         && bounding.left >= -myElementWidth
         && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth
         && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight) {
 
-        console.log('Element is in the viewport!');
-        document.addEventListener("keypress", checkKey);
+        //console.log('step1Clip in VP');
+        document.addEventListener("keypress", checkKeyStep1);
         return true;
     } else {
 
-        console.log('Element is NOT in the viewport!');
+        //console.log('step1Clip niet in VP');
+        return false;
+    }
+}
+
+function step7ClipInViewport(step7Clip) {
+  
+  var bounding = step7Clip.getBoundingClientRect();
+  var myElementHeight = step7Clip.offsetHeight;
+  var myElementWidth = step7Clip.offsetWidth;
+
+    var bounding = step7Clip.getBoundingClientRect();
+
+    if (bounding.top >= -myElementHeight 
+        && bounding.left >= -myElementWidth
+        && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth
+        && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight) {
+
+        //console.log('Element is in the viewport!');
+        document.addEventListener("keypress", checkKeyStep7);
+        return true;
+    } else {
+
+        //console.log('Element is NOT in the viewport!');
         return false;
     }
 }
@@ -93,16 +116,16 @@ function elementInViewport(myElement) {
 
 function repeatOften() {
 
-  //let el = document.querySelector(".test-video")
-  var myElement = document.querySelector(".test-video")
-  //console.log(myElement)
-  //console.log(document.querySelector(".test-video"))
-  elementInViewport(myElement)
+  
+  // var myElement = document.querySelector(".step7-clip")
 
-  //const spanList = [...document.querySelectorAll"(".test-video")];
-  //console.log(spanList)
+  var step1Clip = document.getElementById('step1-clip')
+  step1ClipInViewport(step1Clip)
 
-  //spanList.forEach(element => elementInViewport(element));
+  var step7Clip = document.getElementById('step7-clip')
+  step7ClipInViewport(step7Clip)
+
+
   
   
   requestAnimationFrame(repeatOften);
@@ -111,6 +134,24 @@ requestAnimationFrame(repeatOften);
 
 
 
+
+    let step6Tech = document.querySelector(".step6-tech__question");
+    step6Tech.addEventListener("click", function(){
+      let step6Tech = document.querySelector(".step6-tech");
+  console.log(step6Tech)
+  step6Tech.classList.remove("hidden");
+    });
+
+
+
+    let hideStep6Tech = document.querySelector(".step6-tech-hide");
+    console.log(hideStep6Tech)
+    hideStep6Tech.addEventListener("click", function(){
+      console.log("geklikt")
+      let step6Tech = document.querySelector(".step6-tech");
+  console.log(step6Tech)
+  step6Tech.classList.add("hidden");
+    });
 
 
   /*---------------------------------------------------------------------------------------------------------------------------*/
@@ -130,6 +171,10 @@ requestAnimationFrame(repeatOften);
     //console.log("keyup")
     // document.location.href = "http://localhost/integration3/src/index.php?page";
     previousStep()
+
+
+    
+
 });
 
 

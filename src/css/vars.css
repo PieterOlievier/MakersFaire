@@ -5,6 +5,11 @@
   
 }
 
+.highlight{
+    color: #932718;
+    font-weight: 500;
+}
+
 
 
 @custom-media --only-medium-screen (width >= 500px);
