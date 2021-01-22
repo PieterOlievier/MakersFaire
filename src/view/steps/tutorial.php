@@ -3,17 +3,17 @@
 
 
 <div class="container">
-    <div class="navigatie">
-    <a class="nav-logo" href="index.php">
-        <img class="nav-logo" src="assets/img/index-logo.png">
-    </a>
+        <div class="navigatie">
+            <a class="nav-logo" href="index.php">
+            <img class="nav-logo" src="assets/img/index-logo.png">
+            </a>
         
             <div class="nav-items">
                 <p class="nav-item">
                 <a href="index.php?page=tutorial">De tutorial</a>
                 </p>
                 <p class="nav-item">
-                <a href="index.php?page=tutorial">Bestel jouw kit</a>
+                <a href="index.php?page=shop">Bestel jouw kit</a>
                 </p>
             </div>
         </div>
