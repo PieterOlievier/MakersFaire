@@ -106,7 +106,7 @@ Druk hiervoor op de onderste knop.
 
 
         <div class="step1-instruction__video" controls>
-        <video  id="step1-clip">
+        <video class="step1-video"  id="step1-clip">
                 <source src="assets/gashendel.mp4" type="video/mp4">
             </video>
         </div>
@@ -321,10 +321,11 @@ Voor het ontsteken van de brandstof in de verbrandingsmotor genereerd de bougie 
          <img class="step7-img" src="assets/img/stap7.jpg">
 
             
-            
+            <div class="step7-video">
             <video id="step7-clip">
                 <source src="assets/sparkplug.mp4" type="video/mp4">
             </video>
+            </div>
             
             
 

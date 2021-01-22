@@ -1,19 +1,21 @@
 <?php
 
 require_once __DIR__ . '/Controller.php';
-require_once __DIR__ . '/../dao/OrderDAO.php';
+//require_once __DIR__ . '/../dao/OrderDAO.php';
 require_once __DIR__ . '/../dao/SkillDAO.php';
+require_once __DIR__ . '/../dao/userDAO.php';
 
 
 
 class StepsController extends Controller
 {
 
-  private $skillDAO;
+  private $orderDAO;
 
   function __construct()
   {
-    $this->OrderDAO = new OrderDAO();
+    //$this->orderDAO = new OrderDAO();
+    $this->userDAO = new UserDAO();
   }
 
   public function index()
@@ -34,22 +36,23 @@ class StepsController extends Controller
   public function order()
   {
     if (!empty($_POST)) {
-      $errors = array();
-      if (empty($_POST['username'])) {
-        $errors['username'] = 'Please enter your username';
-      }
-      if (empty($errors)) {
-        $inserteduser = $this->orderDAO->insert(array(
-          'username' => $_POST['username'],
+      
+        $inserteduser = $this->userDAO->insert(array(
+          'naam' => $_POST['naam'],
+          'voornaam' => $_POST['voornaam'],
+          'email' => $_POST['email'],
+          'adres' => $_POST['adres'],
+          'nr' => $_POST['nr'],
+          'postcode' => $_POST['postcode'],
+          'stad' => $_POST['stad']
         ));
         if (!empty($inserteduser)) {
           $_SESSION['info'] = 'Registratie voltooid! </br>Hier kan je inloggen met je nieuwe account';
           header('location:index.php?page=index');
           exit();
         }
-      }
-      $_SESSION['error'] = 'Registratie niet gelukt!';
-      $this->set('errors', $errors);
+      
+    
     }
   }
 

@@ -33,31 +33,66 @@
 
     <form action="index.php?page=order" method="post" class="order-form">
         <p class="form-greeting">aangenaam</p>
-        <div class="form-group row<?php if (!empty($errors['email'])) echo ' has-danger'; ?>">
-            <label class="register-label" for="registerUsername">Naam:</label>
-            <div class="register-input">
-                <input type="text" name="username" id="registerUsername" class="form-control<?php if (!empty($errors['username'])) echo ' form-control-danger'; ?>" value="<?php if (!empty($_POST['username'])) echo $_POST['username']; ?>" />
-                <?php if (!empty($errors['username'])) echo '<div class="form-control-feedback">' . $errors['username'] . '</div>'; ?>
-            </div>
-        </div>
-        <div class="form-group row<?php if (!empty($errors['email'])) echo ' has-danger'; ?>">
-            <label class="register-label" for="registerUsername">Voornaam:</label>
-            <div class="register-input">
-                <input type="text" name="username" id="registerUsername" class="" value="<?php if (!empty($_POST['username'])) echo $_POST['username']; ?>" />
-                <?php if (!empty($errors['username'])) echo '<div class="form-control-feedback">' . $errors['username'] . '</div>'; ?>
-            </div>
-        </div>
-        <div class="order-input">
-            <label class="register-label" for="registerPassword">e-mailadres</label>
-            <div class="register-input">
-                <input type="password" name="password" id="registerPassword" class="form-control<?php if (!empty($errors['password'])) echo ' form-control-danger'; ?>" />
-                <?php if (!empty($errors['password'])) echo '<div class="form-control-feedback">' . $errors['password'] . '</div>'; ?>
-            </div>
-        </div>
+  
+        <label for="naam">Naam</br>
+                    <input class="upload-input input-discription" type="text" id="naam" name="naam"  required value="<?php if (!empty($_POST['naam'])) {
+                                                                                                                                                            echo $_POST['naam'];
+                                                                                                                                                        } ?>">
+
+                    
+        </label>
+
+        <label for="voornaam">Voornaam</br>
+                    <input class="upload-input input-discription" type="text" id="voornaam" name="voornaam"  required value="<?php if (!empty($_POST['voornaam'])) {
+                                                                                                                                                            echo $_POST['voornaam'];
+                                                                                                                                                        } ?>">
+
+                    
+        </label>
+
+        <label for="email">email</br>
+                    <input class="upload-input input-discription" type="email" id="email" name="email"  required value="<?php if (!empty($_POST['email'])) {
+                                                                                                                                                            echo $_POST['email'];
+                                                                                                                                                        } ?>">
+
+                    
+        </label>
+
+        <label for="adres">adres</br>
+                    <input class="upload-input input-discription" type="text" id="adres" name="adres"  required value="<?php if (!empty($_POST['adres'])) {
+                                                                                                                                                            echo $_POST['adres'];
+                                                                                                                                                        } ?>">
+
+                    
+        </label>
+
+        <label for="nr">nr</br>
+                    <input class="upload-input input-discription" type="text" id="nr" name="nr"  required value="<?php if (!empty($_POST['nr'])) {
+                                                                                                                                                            echo $_POST['nr'];
+                                                                                                                                                        } ?>">
+
+                    
+        </label>
+
+        <label for="postcode">postcode</br>
+                    <input class="upload-input input-discription" type="text" id="postcode" name="postcode"  required value="<?php if (!empty($_POST['postcode'])) {
+                                                                                                                                                            echo $_POST['postcode'];
+                                                                                                                                                        } ?>">
+
+                    
+        </label>
+
+        <label for="stad">stad/gemeente</br>
+                    <input class="upload-input input-discription" type="text" id="stad" name="stad"  required value="<?php if (!empty($_POST['stad'])) {
+                                                                                                                                                            echo $_POST['stad'];
+                                                                                                                                                        } ?>">
+
+                    
+        </label>
         
         <div class="form-group row">
-            <div>
-                <input type="submit" value="Naar betaling" class="register-submit">
+        <div class="offset-sm-2 col-sm-10">
+                <input type="submit" value="registreer" class="register-submit">
             </div>
         </div>
     </form>
