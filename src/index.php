@@ -20,13 +20,13 @@ $routes = array(
     'controller' => 'Steps',
     'action' => 'tutorial'
   ),
-  'step2' => array(
+  'shop' => array(
     'controller' => 'Steps',
-    'action' => 'step2'
+    'action' => 'shop'
   ),
-  'step3' => array(
+  'order' => array(
     'controller' => 'Steps',
-    'action' => 'step3'
+    'action' => 'order'
   ),
   
 );

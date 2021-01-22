@@ -24,12 +24,12 @@ class StepsController extends Controller
   
   }
 
-  public function step2()
+  public function shop()
   {
   
   }
 
-  public function step3()
+  public function order()
   {
   
   }

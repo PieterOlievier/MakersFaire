@@ -28,7 +28,8 @@
     <div class="index-cta">
         <p class="index-cta__text">Bouw je eigen</p>
         <p class="index-cta__imp">Gemotoriseerde</br> fiets<p>
-        <p class="index-cta__link">Naar tutorial</p>
+        <p class="index-cta__link"><a href="index.php?page=tutorial">De tutorial</a></p>
+       
     </div>
 
     
