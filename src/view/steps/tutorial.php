@@ -162,8 +162,35 @@ Druk hiervoor op de onderste knop.
             <div class="step-number">III</div>
             <p class="step-title-step">motor</p>
         </div>
+
+        
+        <img class="step3-img" src="assets/stap3.gif">
+
+        <div class="step3-t1">
+        <p class="step3-step__title">1</p>
+        Neem de motor en zet deze in het frame.
+        </div>
+
+        <div class="step3-t2">
+        <p class="step3-step__title">2</p>
+        Beweeg de motor een beetje zodat hij goed op het frame rust.
+        </div>
+
+        <div class="step3-t3">
+        <p class="step3-step__title">3</p>
+        Draai de twee moeren uit de bevestigingspunten, deze zal je later nodig hebben.
+        </div>
+
+        <div class="step3-t4">
+        <p class="step3-step__title">4</p>
+        Neem nu de twee halve cilinders. 
+        Schuif deze over de bouten van de bevestigingspunten van de motor en draai de moeren er opnieuw op.
+        </div>
+        
+        <img class="step3-detail" src="assets/img/stap3-detail.png">
         
      
+
          </section>
 
 

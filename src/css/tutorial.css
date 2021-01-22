@@ -455,6 +455,85 @@ video{
 }
 /* --------------------------------- STEP3 --------------------------------- */
 
+#step3{
+  display: grid;
+  grid-template-columns: repeat(10 , 10vw);
+  grid-template-rows: repeat(6,1fr);
+  background-color: white;
+  font-family: 'Avenir';
+  color: black;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.step3-img{
+  background-color: rebeccapurple;
+  grid-row: 3/ span 3;
+  grid-column: 1 / span 6;
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+.step3-text{
+  background-color: red;
+  grid-row: 5 / span 1;
+  grid-column: 2 / span 4;
+}
+
+.step3-step__title{
+  font-family: 'Retrocycles';
+  font-size: 8rem;
+  color: var(--red);
+  margin-right: 1rem;
+  opacity: 35%;
+}
+
+.step3-t1{
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  display: flex;
+  white-space: normal;
+  margin-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 10rem;
+}
+
+.step3-t2{
+  grid-row: 2;
+  grid-column: 2 / span 2;
+  display: flex;
+  white-space: normal;
+  padding-top: 3rem;
+  margin-right: 5rem;
+}
+
+.step3-t3{
+  grid-row: 3;
+  grid-column: 3 / span 2;
+  display: flex;
+  white-space: normal;
+  margin-top: 3rem;
+
+}
+
+.step3-t4{
+  grid-row: 2;
+  grid-column: 4 / span 3;
+  display: flex;
+  white-space: normal;
+  padding-top: 3rem;
+  padding-right: 5rem;
+
+}
+
+.step3-detail{
+  grid-row: 1 / span 4;
+  grid-column: 7 / span 4;
+  max-width: 100%;
+  margin-top: 4rem;
+
+}
+
 
 /* --------------------------------- STEP4 --------------------------------- */
 #step4{
