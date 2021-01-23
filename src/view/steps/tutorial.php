@@ -140,7 +140,7 @@ Druk hiervoor op de onderste knop.
         <div class="step2-t2">
             <p class="step2-step__title">2</p>
             Vervolgens neem je de andere rubberen ring en plaats je deze aan de buitenkant van de spaken.
-            De spaken zitten dus tussen de ringen
+            
         </div>
 
         <div class="step2-t3">
@@ -229,6 +229,12 @@ Druk hiervoor op de onderste knop.
              Draai vervolgens de bouten terug in het blok met de carburator.
              </div>
         
+             
+             
+                  <video controls class="step4-video"  id="step1-clip">
+                <source src="assets/gashendel.mp4" type="video/mp4">
+            </video>
+            
      
          </section>
 
@@ -238,7 +244,7 @@ Druk hiervoor op de onderste knop.
          <div class="step-title__test">
             STAP
             <div class="step-number">V</div>
-            <p class="step-title-step">brandstoftank</p>
+            <p class="step5-title-step">brandstoftank</p>
         </div>
 
          
@@ -308,7 +314,7 @@ Voor het ontsteken van de brandstof in de verbrandingsmotor genereerd de bougie 
          <img class="step6-detail" src="assets/img/stap6-detail.png">
 
          
-
+     
          
      
          </section>
@@ -321,11 +327,11 @@ Voor het ontsteken van de brandstof in de verbrandingsmotor genereerd de bougie 
          <img class="step7-img" src="assets/img/stap7.jpg">
 
             
-            <div class="step7-video">
-            <video id="step7-clip">
+            
+            <video controls class="step7-video" id="step7-clip">
                 <source src="assets/sparkplug.mp4" type="video/mp4">
             </video>
-            </div>
+            
             
             
 

@@ -15,7 +15,7 @@ module.exports = (env, { mode }) => {
     devServer: {
       overlay: true,
       hot: true,
-      port: 9000,
+      port: 8900,
       disableHostCheck: true
     },
     module: {
@@ -30,16 +30,16 @@ module.exports = (env, { mode }) => {
             }
           }
         },
-         {
-           test: /\.(woff|woff2)$/,
-           use: {
-             loader: 'file-loader',
-             options: {
-               name: 'assets/fonts/[name].[ext]',
-               esModule: false,
-             }
-           }
-         },
+        {
+          test: /\.(woff|woff2)$/,
+          use: {
+            loader: 'file-loader',
+            options: {
+              name: 'assets/fonts/[name].[ext]',
+              esModule: false,
+            }
+          }
+        },
         {
           test: /\.css$/,
           use: [

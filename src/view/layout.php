@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Makers Faire<?php echo $title; ?></title>
+  <title>Makers Faire</title>
   <?php /* NEW */ ?>
   <?php echo $css; ?>
 </head>
