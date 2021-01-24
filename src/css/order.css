@@ -34,15 +34,80 @@
   }
 
   .order-form{
-      background-color: violet;
       grid-row: 2 / span 5;
       grid-column: 7 / span 4;
       padding: 3rem;
-     
+    padding-left: 0rem;
   }
 
   .form-greeting{
       color: var(--red);
       font-family: 'Retrocycles';
       font-size: 5rem;
+      margin-bottom: 5rem;
+  }
+
+  .order-label{
+      display: flex;
+      flex-direction: column;
+      font-family: 'Cocogoose';
+    
+  }
+
+  .order-input{
+      width: 15vw;
+      margin-bottom: 1.5rem;
+      border: 0.3rem solid var(--red);
+      border-radius: 3rem;
+      border-top-left-radius: 0rem;
+      border-bottom-left-radius: 0rem;
+      border-left: none;
+      padding: 1rem;
+      margin-right: 3rem;
+  }
+
+  .order-form__adress{
+      font-family: "Retrocycles";
+      color: var(--red);
+      font-size: 2vw;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+  }
+
+  .order-adres-number{
+      display: flex;
+  }
+
+  .order-input__number{
+      width: 7.5vw;
+      margin-bottom: 1.5rem;
+      border: 0.3rem solid var(--red);
+      border-radius: 3rem;
+      padding: 1rem;
+  }
+
+  .order-code-city{
+      display: flex;
+  }
+
+
+  .order-input__code{
+      width: 7.5vw;
+      margin-bottom: 1.5rem;
+      border: 0.3rem solid var(--red);
+      border-radius: 3rem;
+      padding: 1rem;
+      border-top-left-radius: 0rem;
+      border-bottom-left-radius: 0rem;
+      border-left: none;
+  }
+
+
+  .order-input__city{
+      width: 15vw;
+      margin-bottom: 1.5rem;
+      border: 0.3rem solid var(--red);
+      border-radius: 3rem;
+      padding: 1rem;
+    margin-left: 3rem;
   }

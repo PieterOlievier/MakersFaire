@@ -10,7 +10,7 @@
   .index-logo{
       grid-column: 1 / span 3;
       grid-row: 2;
-      max-width: 100%;
+      max-width: 85%;
       margin-left: 5rem;
   }
 
@@ -59,6 +59,7 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
+      padding-top: 3rem;
   }
 
   .index-cta__imp{
@@ -110,7 +111,7 @@
       align-items: center;
       justify-content: flex-end;
       font-family: 'Retrocycles';
-      font-size: 10rem;
+      font-size: 5vw;
       border: 1rem solid black;
       border-bottom: none;
       border-left: none;
@@ -128,7 +129,7 @@
       padding-right: 7rem;
       align-items: center;
       font-family: 'Retrocycles';
-      font-size: 5rem;
+      font-size: 3vw;
       display: flex;
   }
 
@@ -145,7 +146,7 @@
       align-items: center;
       font-family: 'Retrocycles';
       text-align: center;
-      font-size: 6rem;
+      font-size: 4.5vw;
       padding-right: 5rem;
       padding-top: 5rem;
   }
@@ -229,4 +230,70 @@
 
   .sponsors-img{
       max-width: 90%;
+  }
+
+
+  @media only screen and (max-width: 1200px) {
+
+    .header-img{
+      /* grid-column: 3 / span 8;
+      grid-row: 1 / span 4; */
+      grid-area: 1 / 4 / span 3 / span 10;
+      max-width: 100%;
+  }
+
+      .index-circles{
+      display: none;
+  }
+
+   .index-text{
+    background-color: var(--red);
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 5;
+    border: 1rem solid var(--red);
+    border-bottom-left-radius: 15rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    padding-top: 1rem;
+    margin-left: 5rem;
+    font-family: 'Avenir';
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: white;
+}
+
+.event-adres{
+      grid-row: 4 / span 2;
+      grid-column: 5 / span 3;
+      display: flex;
+      
+      align-items: flex-start;
+      font-family: 'Retrocycles';
+      text-align: center;
+      font-size: 4.5vw;
+      padding-right: 5rem;
+      padding-top: 0rem;
+
+  }
+
+   .event-dates{
+      display: flex;
+      flex-direction: column;
+  }
+    .event-info{
+      grid-row: 2;
+      grid-column: 7 / span 3;
+      justify-content: space-evenly;
+      padding-left: 3rem;
+      padding-right: 7rem;
+      align-items: center;
+      font-family: 'Retrocycles';
+      font-size: 3vw;
+      display: flex;
+      padding-top: 5rem;
+  }
+
+
+
+
   }

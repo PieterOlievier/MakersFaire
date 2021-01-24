@@ -34,67 +34,76 @@
     <form action="index.php?page=order" method="post" class="order-form">
         <p class="form-greeting">aangenaam</p>
   
-        <label for="naam">Naam</br>
-                    <input class="upload-input input-discription" type="text" id="naam" name="naam"  required value="<?php if (!empty($_POST['naam'])) {
+        <label class="order-label" for="naam">Naam</br>
+                    <input class="order-input" type="text" id="naam" name="naam"  required value="<?php if (!empty($_POST['naam'])) {
                                                                                                                                                             echo $_POST['naam'];
                                                                                                                                                         } ?>">
 
                     
         </label>
 
-        <label for="voornaam">Voornaam</br>
-                    <input class="upload-input input-discription" type="text" id="voornaam" name="voornaam"  required value="<?php if (!empty($_POST['voornaam'])) {
+        <label class="order-label" for="voornaam">Voornaam</br>
+                    <input class="order-input" type="text" id="voornaam" name="voornaam"  required value="<?php if (!empty($_POST['voornaam'])) {
                                                                                                                                                             echo $_POST['voornaam'];
                                                                                                                                                         } ?>">
 
                     
         </label>
 
-        <label for="email">email</br>
-                    <input class="upload-input input-discription" type="email" id="email" name="email"  required value="<?php if (!empty($_POST['email'])) {
+        <label class="order-label" for="email">email</br>
+                    <input class="order-input" type="email" id="email" name="email"  required value="<?php if (!empty($_POST['email'])) {
                                                                                                                                                             echo $_POST['email'];
                                                                                                                                                         } ?>">
 
                     
         </label>
 
-        <label for="adres">adres</br>
-                    <input class="upload-input input-discription" type="text" id="adres" name="adres"  required value="<?php if (!empty($_POST['adres'])) {
+        <p class="order-form__adress">Waar mogen wij jouw kit leveren?</p>
+
+       <div class="order-adres-number">                                                                                                                                                 
+
+        <label  for="adres">adres</br>
+                    <input class="order-input" type="text" id="adres" name="adres"  required value="<?php if (!empty($_POST['adres'])) {
                                                                                                                                                             echo $_POST['adres'];
                                                                                                                                                         } ?>">
 
                     
         </label>
 
-        <label for="nr">nr</br>
-                    <input class="upload-input input-discription" type="text" id="nr" name="nr"  required value="<?php if (!empty($_POST['nr'])) {
+        <label  for="nr">nr</br>
+                    <input class="order-input__number" type="text" id="nr" name="nr"  required value="<?php if (!empty($_POST['nr'])) {
                                                                                                                                                             echo $_POST['nr'];
                                                                                                                                                         } ?>">
 
                     
         </label>
+        </div>
 
-        <label for="postcode">postcode</br>
-                    <input class="upload-input input-discription" type="text" id="postcode" name="postcode"  required value="<?php if (!empty($_POST['postcode'])) {
+        <div class="order-code-city">
+
+        <label class="order-label" for="postcode">postcode</br>
+                    <input class="order-input__code" type="text" id="postcode" name="postcode"  required value="<?php if (!empty($_POST['postcode'])) {
                                                                                                                                                             echo $_POST['postcode'];
                                                                                                                                                         } ?>">
 
                     
         </label>
 
-        <label for="stad">stad/gemeente</br>
-                    <input class="upload-input input-discription" type="text" id="stad" name="stad"  required value="<?php if (!empty($_POST['stad'])) {
+        <label class="order-label" for="stad">stad/gemeente</br>
+                    <input class="order-input__city" type="text" id="stad" name="stad"  required value="<?php if (!empty($_POST['stad'])) {
                                                                                                                                                             echo $_POST['stad'];
                                                                                                                                                         } ?>">
 
                     
         </label>
+        </div>
         
         <div class="form-group row">
         <div class="offset-sm-2 col-sm-10">
                 <input type="submit" value="registreer" class="register-submit">
             </div>
         </div>
+        
     </form>
 
 
