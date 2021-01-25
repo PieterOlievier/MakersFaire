@@ -153,16 +153,15 @@ require('./style.css');
     step6Tech.classList.add("hidden");
   });
 
+  // const updateGreeting = () => {
+  //   document.getElementById('textbox_id').value
+  //   console.log("update uitgevoerd")
+  // }
 
-  const updateGreeting = () => {
-    document.getElementById('textbox_id').value
-    console.log("update uitgevoerd")
-  }
-
-  var greeting = document.getElementById("voornaam");
-  greeting.onchange = function () {
-    console.log(greeting.value);
-  }
+  // var greeting = document.getElementById("voornaam");
+  // greeting.onchange = function () {
+  //   console.log(greeting.value);
+  // }
 
 
   /*---------------------------------------------------------------------------------------------------------------------------*/

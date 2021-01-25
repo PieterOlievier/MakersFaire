@@ -36,6 +36,15 @@
 
 .nav-item{
   margin-left: 5rem;
+  text-decoration: none!important;
+  color: var(--red);
+}
+
+.nav-item__active{
+  text-decoration: none!important;
+  color: var(--red);
+  border-bottom: 0.2rem solid black;
+  margin-left: 5rem;
 }
 
 
@@ -295,8 +304,12 @@
 }
 
 .step1-img{
-  grid-area: 4 / 2 / span 4 / span 3;
+  grid-area: 2 / 2 / span 5 / span 3;
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-left: 5rem;
 }
 
 .step1-text{
@@ -323,21 +336,31 @@
 
 
 .control-button1__text{
-  grid-column: 3 / span 2;
-  grid-row: 3;
+  grid-column: 3 / span 3;
+  grid-row: 2;
   color: black;
   font-size: 1.8rem;
   white-space: normal;
   padding: 3rem;
+  border-left: 0.5rem solid var(--red);
+  margin-top: 3rem;
+
 }
 
 .control-button2__text{
   padding: 3rem;
-  grid-column: 3 / span 2;
+  grid-column: 3 / span 3;
   grid-row: 6;
   color: black;
   font-size: 1.8rem;
   white-space: normal;
+  border-left: 0.5rem solid var(--red);
+  margin-bottom: 3rem;
+}
+
+.control-button__title{
+  font-family: "Cocogoose";
+  margin-bottom: 0.5rem;
 }
 
 .step1-instruction__video{
@@ -542,6 +565,23 @@ video{
   margin-right: 3rem;
 }
 
+
+
+.step4-video-test{
+  grid-row: 2 / span 4;
+  grid-column: 7 / span 4;
+  /* grid-column: 6 / span 4; */
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.step4-video{
+  width:100%;
+  padding: 3rem;
+} 
+
+
 .step4-step__title{
   font-family: 'Retrocycles';
   font-size: 10rem;
@@ -552,9 +592,11 @@ video{
 
 .step4-t1{
   grid-row: 2;
-  grid-column: 2 / span 2;
+  grid-column: 2 / span 3;
   white-space: normal;
   display: flex;
+  align-items: flex-end;
+  padding-right: 5rem;
 }
 
 .step4-step__title-tip{
@@ -592,6 +634,8 @@ video{
   display: flex;
   margin-top: 3rem;
 }
+
+
 
 /* --------------------------------- STEP5 --------------------------------- */
 
@@ -776,12 +820,12 @@ video{
   align-items: center;
 }
 
-.step7-clip{
+.step7-video{
   grid-row: 3 / span 4;
   grid-column: 4 / span 4;
   padding: 1rem;
   padding-right: 0.5rem;
-  max-width: 90%;
+  max-width: 100%;
   margin-bottom: 3rem;
 }
 
@@ -863,6 +907,41 @@ video{
 .progressbar{
   background-color: var(--red);
   height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.progressbar-step{
+  display: flex;
+  flex-direction: column;
+  width: 8vw;
+  color: white;
+  font-family: "cocogoose";
+  align-items: center;
+  font-size: 0.75vw;
+}
+
+.progressbar-step__circle{
+  align-self: center;
+  
+  border: 0.3rem solid black;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.progressbar-step__number{
+  align-self: center;
+  text-align: center;
+  display: flex;
+  font-size: 1vw;
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -1231,12 +1310,12 @@ video{
   padding-left: 2rem;
 }
 
-.step4-video{
+/* .step4-video{
   grid-row: 4 / span 2;
   grid-column: 1 / span 10;
   max-width: 100%;
   padding-top: 7rem;
-}
+} */
 
   /* --------------------------------- STEP5 --------------------------------- */
 

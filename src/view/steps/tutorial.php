@@ -9,12 +9,12 @@
             </a>
         
             <div class="nav-items">
-                <p class="nav-item">
-                <a href="index.php?page=tutorial">De tutorial</a>
-                </p>
-                <p class="nav-item">
-                <a href="index.php?page=shop">Bestel jouw kit</a>
-                </p>
+                
+                <a class="nav-item__active" href="index.php?page=tutorial">De tutorial</a>
+                
+                
+                <a class="nav-item" href="index.php?page=shop">Bestel jouw kit</a>
+            
             </div>
         </div>
         <div class="wrapper" id="wrapper">
@@ -92,11 +92,13 @@
         schuif deze over de rechterzijde van het stuur en maak het vast door de twee schroeven in de onderkant aan te draaien.</div>
 
         <div class="control-button1__text">
+            <p class="control-button__title">play-pauze filmpje</p>
         Om het jou gemakkelijk te maken is er voor sommige stappen een filmpje voorzien.</br>
         Om het af te spelen druk je op de bovenste knop.
         </div>
         <img src="assets/img/gashendel.png" class="step1-img">
         <div class="control-button2__text">
+            <p class="control-button__title">volgende stap</p>
         Deze gashendel kan je nu gebruiken om naar de volgende stappen van het proces te gaan.
 Druk hiervoor op de onderste knop.
         </div>
@@ -209,6 +211,12 @@ Druk hiervoor op de onderste knop.
             <p class="step-title-step">carburator</p>
         </div>
 
+        <div class="step4-video-test">
+         <video class="step4-video"  id="step7-clip">
+                <source src="assets/carb-full.mp4" type="video/mp4">
+            </video>
+            </div>
+
          <div class="step4-t1">
              <p class="step4-step__title">1</p>
              In het blok zitten de twee bouten die je zal nodig hebben om de carburator te monteren. Draai deze uit het blok en hou ze bij de hand.
@@ -216,7 +224,7 @@ Druk hiervoor op de onderste knop.
 
         <div class="step4-tip">
         <p class="step4-step__title-tip">tip</p>
-        het is gemakkelijk als je al een van de bouten door een van de gaten steekt. Dit helpt je om de gaten in het blok terug te vinden. 
+        het is gemakkelijk als je al een van de bouten door een van de gaten van de carburator steekt. Dit helpt je om de gaten in het blok terug te vinden. 
         </div>
 
         <div class="step4-t2">
@@ -231,10 +239,8 @@ Druk hiervoor op de onderste knop.
         
              
              
-                  <video controls class="step4-video"  id="step1-clip">
-                <source src="assets/gashendel.mp4" type="video/mp4">
-            </video>
-            
+                 
+        
      
          </section>
 
@@ -279,7 +285,7 @@ Druk hiervoor op de onderste knop.
          <h2 class="step-title hidden">Stap 6</h2>
          <div class="step-title__test">
             STAP
-            <div class="step-number">VI</div>
+            <div class="step-number">VII</div>
             <p class="step-title-step">bobine</p>
         </div>
 
@@ -321,7 +327,12 @@ Voor het ontsteken van de brandstof in de verbrandingsmotor genereerd de bougie 
 
 
          <section class="step" id="step7">
-         <h2 class="step-title">Stap 7</h2>
+             <h2 class="step-title hidden">Stap 7</h2>
+         <div class="step-title__test">
+            STAP
+            <div class="step-number">VI</div>
+            <p class="step-title-step">boegie</p>
+        </div>
 
          
          <img class="step7-img" src="assets/img/stap7.jpg">
@@ -352,7 +363,12 @@ Voor het ontsteken van de brandstof in de verbrandingsmotor genereerd de bougie 
          </section>
 
          <section class="step" id="step8">
-         <h2 class="step-title">Stap 8</h2>
+         <h2 class="step-title hidden">Stap 8</h2>
+         <div class="step-title__test">
+            STAP
+            <div class="step-number">VIII</div>
+            <p class="step-title-step">ketting</p>
+        </div>
 
         
         <img class="step8-img" src="assets/img/stap8.png">
@@ -399,8 +415,91 @@ Voor het ontsteken van de brandstof in de verbrandingsmotor genereerd de bougie 
     
 
     <div class="progressbar">
-        Hier komt de progess bar
-        Dit is nog een test
+
+
+    <!-- </?php foreach ($steps as $step) : ?>
+                
+                    <a class="progressbar-step__circle" href="</?php echo $step['titel']; ?>">
+                        
+                            <p class="progressbar-step__number"></?php echo $step['stap-number'] ?></p>
+                    </a>
+                
+            </?php endforeach; ?> -->
+
+
+
+       <div class="progressbar-step">
+                <a class="progressbar-step__circle" href="#fiets">
+                    <p class="progressbar-step__number">O</p>
+            </a>
+            fiets kiezen
+        </div>
+
+        <div class="progressbar-step">
+                <a class="progressbar-step__circle" href="#voorbereiding">
+                    <p class="progressbar-step__number">O</p>
+            </a>
+            voorbereiding
+        </div>
+
+        <div class="progressbar-step">
+                <a class="progressbar-step__circle" href="#step1">
+                    <p class="progressbar-step__number">I</p>
+            </a>
+            gashendel
+        </div>
+
+        <div class="progressbar-step">
+                <a class="progressbar-step__circle" href="#step2">
+                    <p class="progressbar-step__number">II</p>
+            </a>
+            tandwiel
+        </div>
+
+         <div class="progressbar-step">
+                <a class="progressbar-step__circle" href="#step3">
+                    <p class="progressbar-step__number">III</p>
+            </a>
+            motor
+        </div>
+
+         <div class="progressbar-step">
+                <a class="progressbar-step__circle" href="#step4">
+                    <p class="progressbar-step__number">IV</p>
+            </a>
+            motor
+        </div>
+
+         <div class="progressbar-step">
+                <a class="progressbar-step__circle" href="#step5">
+                    <p class="progressbar-step__number">V</p>
+            </a>
+            benzine tank
+        </div>
+
+         <div class="progressbar-step">
+                <a class="progressbar-step__circle" href="#step4">
+                    <p class="progressbar-step__number">VI</p>
+            </a>
+            bobine
+        </div>
+
+        <div class="progressbar-step">
+                <a class="progressbar-step__circle" href="#step4">
+                    <p class="progressbar-step__number">VII</p>
+            </a>
+            boegie
+        </div>
+
+        <div class="progressbar-step">
+                <a class="progressbar-step__circle" href="#step4">
+                    <p class="progressbar-step__number">VIII</p>
+            </a>
+            ketting
+        </div>
+
+        
+        
     </div>
 
 </div>
