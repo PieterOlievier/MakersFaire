@@ -29,7 +29,7 @@
   max-width: 100%;
   padding-top: 10rem;
   display: flex;
-  justify-seft: center;
+  justify-self: center;
 }
 
 .kit-parts{
@@ -61,7 +61,6 @@
 }
 
 .kit-amount{
-  background-color: yellow;
   grid-row: 2;
   grid-column: 8 / span 3;
 }
