@@ -1,9 +1,23 @@
 <h1 class="hidden">Makers Faire</h1>
 
 
-
+        
 
 <section class="index-grid">
+
+<div class="index-navigatie">
+         
+        
+            <div class="nav-items">
+                
+                
+                <a class="index-nav-item" href="index.php?page=shop">Bestel jouw kit</a>
+                
+            </div>
+        </div>
+
+
+
     <img class="header-img" src="assets/img/header.png">
 
     
@@ -28,7 +42,7 @@
     <div class="index-cta">
         <p class="index-cta__text">Bouw je eigen</p>
         <p class="index-cta__imp">Gemotoriseerde</br> fiets<p>
-        <p class="index-cta__link"><a href="index.php?page=tutorial">De tutorial</a></p>
+        <a class="index-cta__link" href="index.php?page=tutorial">De tutorial</a>
        
     </div>
 
@@ -56,7 +70,7 @@
         </p>
     </div>
 
-    
+    <img class="event-tach__detail" src="assets/img/tach.png">
     
     <img class="event-img" src="assets/img/racetrack.png">
 
