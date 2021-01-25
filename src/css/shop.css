@@ -24,10 +24,12 @@
 }
 
 .shop-bike{
-  grid-column: 3 / span 6;
+  grid-column: 4 / span 6;
   grid-row: 1 / span 2;
   max-width: 100%;
   padding-top: 10rem;
+  display: flex;
+  justify-seft: center;
 }
 
 .kit-parts{
