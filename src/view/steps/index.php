@@ -74,7 +74,7 @@
     
     <img class="event-img" src="assets/img/racetrack.png">
 
-    <div class="event-info">
+    <!-- <div class="event-info">
         <div class="event-dates">
             <p class="event-date">30/04<p>
             <p class="event-date">1-2/05<p>
@@ -85,7 +85,7 @@
     <div class="event-adres">
     chinastraat</br>
     9000 gent
-    </div>
+    </div> -->
     
     <img class="event-detail" src="assets/img/event-detail.png">
 
