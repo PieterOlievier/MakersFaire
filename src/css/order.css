@@ -162,5 +162,23 @@
       grid-column: 7;
   }
 
+   .order-input__code{
+      width: 15vw;
+      margin-bottom: 1.5rem;
+      border: 0.3rem solid var(--red);
+      border-radius: 3rem;
+      padding: 1rem;
+  }
+.order-input__city{
+      width: 20vw;
+      margin-bottom: 1.5rem;
+      border: 0.3rem solid var(--red);
+      border-radius: 3rem;
+      padding: 1rem;
+    margin-left: 3rem;
+  }
+
+
+
 
   }

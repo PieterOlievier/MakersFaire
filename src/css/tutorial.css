@@ -146,6 +146,8 @@
 .intro-step{
   font-weight: 400;
   font-size: 3rem;
+    white-space: normal;
+
 }
 
 .shop-link{
@@ -963,6 +965,10 @@ video{
     position: relative;
   }
 
+  #intro{
+  display: none;
+}
+
   .wrapper{
     width: 100%;
     overflow-y: scroll;
@@ -990,6 +996,7 @@ video{
   font-family: 'Retrocycles';
   font-size: 7.5vw;
   padding-top: 2rem;
+  padding-left: 3rem;
   color: var(--red);
 }
 
@@ -1104,7 +1111,7 @@ video{
 #step2{
   background-image: url('../assets/img/stap2-mobile@2x.png');
   background-position: bottom; 
-  background-size: 55%;
+  background-size: 75%;
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: repeat(10 , 10vw);
@@ -1128,6 +1135,10 @@ video{
 .step2-step__title{
   display: none;
 }
+
+
+
+
 
 .step2-t1{
   grid-row: 1 / span 2;
@@ -1536,6 +1547,10 @@ video{
   white-space: normal;
   display: flex;
 }
+
+
+.progressbar{
+  display: none;}
 
 
 }

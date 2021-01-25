@@ -25,7 +25,8 @@
         <img class="intro-gif" src="assets/gashendel.gif">
 
         <div class="step-title">
-            <p>Klaar om van start te gaan?</p>
+            <!-- <p>Klaar om van start te gaan?</p> -->
+            <p class="step-title-step">voorbereiding</p>
             <p class="intro-step">Haal de gashendel uit de kit en druk op de onderste knop</p>
         </div>
     
@@ -43,7 +44,8 @@
 
 
      <section class="step" id="fiets">
-        <h2 class="step-title">Kies je fiets</h2>
+        <h2 class="step-title hidden">Kies je fiets</h2>
+        <p class="step-title-step">Kies je fiets</p>
         <img class="fiets-img" src="assets/img/fiets-kiezen.png">
             <div class="fiets-text">
             Kies een fiets om te motoriseren.</br>
@@ -64,7 +66,8 @@
 
 
         <section class="step" id="voorbereiding">
-        <h2 class="step-title">voorbereiding</h2>
+        <h2 class="step-title hidden">voorbereiding</h2>
+        <p class="step-title-step">voorbereiding</p>
 
         <img src="assets/img/voorbereiding.png" class="voorbereiding-img">
 
