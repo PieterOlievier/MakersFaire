@@ -52,6 +52,15 @@ require('./style.css');
     };
   }
 
+  function checkKeyStep4(e) {
+    console.log("uitgevoerd")
+    var video = document.getElementById('step4-clip');
+    var key = e.which || e.keyCode;
+    if (key === 112) {
+      video.paused ? video.play() : video.pause();
+    };
+  }
+
   function checkKeyStep7(e) {
     console.log("uitgevoerd")
     var video = document.getElementById('step7-clip');
@@ -81,6 +90,30 @@ require('./style.css');
 
       //console.log('step1Clip in VP');
       document.addEventListener("keypress", checkKeyStep1);
+      return true;
+    } else {
+
+      //console.log('step1Clip niet in VP');
+      return false;
+    }
+  }
+
+
+  function step4ClipInViewport(step4Clip) {
+
+    var bounding = step4Clip.getBoundingClientRect();
+    var myElementHeight = step4Clip.offsetHeight;
+    var myElementWidth = step4Clip.offsetWidth;
+
+    var bounding = step4Clip.getBoundingClientRect();
+
+    if (bounding.top >= -myElementHeight
+      && bounding.left >= -myElementWidth
+      && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth
+      && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight) {
+
+      //console.log('step1Clip in VP');
+      document.addEventListener("keypress", checkKeyStep4);
       return true;
     } else {
 
@@ -121,6 +154,9 @@ require('./style.css');
 
     var step1Clip = document.getElementById('step1-clip')
     step1ClipInViewport(step1Clip)
+
+    var step4Clip = document.getElementById('step4-clip')
+    step4ClipInViewport(step4Clip)
 
     var step7Clip = document.getElementById('step7-clip')
     step7ClipInViewport(step7Clip)

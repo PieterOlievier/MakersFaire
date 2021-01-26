@@ -126,8 +126,9 @@
   @media only screen and (max-width: 1500px) {
 
     .order-img{
-        grid-row: 6;
-        grid-column: 4 / span 4;
+        grid-column: 6 / span 4;
+        grid-row: 1 / span 2;
+
     }
 
     .divider-line{
@@ -142,6 +143,55 @@
     font-family: 'Cocogoose';
   }
 
+     .order-input{
+      width: 30vw;
+      margin-bottom: 1.5rem;
+      border: 0.3rem solid var(--red);
+      border-radius: 3rem;
+      
+      padding: 1rem;
+      margin-right: 3rem;
+  }
+
+  .order-form__adress{
+      font-family: "Retrocycles";
+      color: var(--red);
+      font-size: 4vw;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      
+      grid-column: 7;
+  }
+
+   .order-input__code{
+      width: 15vw;
+      margin-bottom: 1.5rem;
+      border: 0.3rem solid var(--red);
+      border-radius: 3rem;
+      padding: 1rem;
+  }
+.order-input__city{
+      width: 20vw;
+      margin-bottom: 1.5rem;
+      border: 0.3rem solid var(--red);
+      border-radius: 3rem;
+      padding: 1rem;
+    margin-left: 3rem;
+  }
+
+
+
+
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+    .order-img{
+        display: none;
+
+    }
+     
      .order-input{
       width: 50vw;
       margin-bottom: 1.5rem;

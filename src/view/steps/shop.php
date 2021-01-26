@@ -7,12 +7,12 @@
             </a>
         
             <div class="nav-items">
-                <p class="nav-item">
-                <a href="index.php?page=tutorial">De tutorial</a>
-                </p>
-                <p class="nav-item">
-                <a href="index.php?page=shop">Bestel jouw kit</a>
-                </p>
+                
+                <a class="nav-item" href="index.php?page=tutorial">De tutorial</a>
+                
+                
+                <a class="nav-item__active" href="index.php?page=shop">Bestel jouw kit</a>
+            
             </div>
         </div>
 
@@ -37,22 +37,22 @@
     
     <img class="shop-bg-right" src="assets/img/shop-bg-right.png">
 
-    <div class="kit-amount">
-        20 kits aub
-    </div>
+    
 
     <div class="kit-price">125 <span class="price-euro">euro</span></div>
 
     
-    <div class="order-button">
-        <p class="order-button__button">verder naar bestellen</p>
-        <a href="index.php?page=order">Bestel jouw kit</a>
-    </div>
+    
 
    
     <img class="shop-bike" src="assets/img/shop-bike.png">
 
-
+<div class="order-button">
+     
+        <a href="index.php?page=order">
+            <p class="order-button__button">verder naar bestellen</p>
+        </a>
+    </div>
 
 
 

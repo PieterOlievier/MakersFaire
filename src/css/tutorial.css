@@ -332,6 +332,21 @@
   grid-column: 6;
   max-width: 50%;
   display: flex;
+  justify-self: center;
+  align-self: center;
+} 
+
+  .play-button__text{
+  grid-row: 6;
+  grid-column: 7 / span 3;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+  font-family: 'Avenir';
+  color: black;
+    white-space: normal;
+    display: flex;
+    align-self: center;
 
 }
 
@@ -845,6 +860,12 @@ video{
   white-space: normal;
   display: flex;
   padding-right: 5rem;
+}
+
+.step7-detail{
+  grid-row: 1 / span 5;
+  grid-column: 8 / span 3;
+  max-width: 100%;
 }
 
 /* --------------------------------- STEP8 --------------------------------- */

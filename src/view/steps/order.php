@@ -12,12 +12,12 @@
             </a>
         
             <div class="nav-items">
-                <p class="nav-item">
-                <a href="index.php?page=tutorial">De tutorial</a>
-                </p>
-                <p class="nav-item">
-                <a href="index.php?page=tutorial">Bestel jouw kit</a>
-                </p>
+                
+                <a class="nav-item" href="index.php?page=tutorial">De tutorial</a>
+                
+                
+                <a class="nav-item__active" href="index.php?page=shop">Bestel jouw kit</a>
+            
             </div>
         </div>
 
