@@ -110,7 +110,7 @@
         
         <div class="form-group row">
         <div class="offset-sm-2 col-sm-10">
-                <input type="submit" value="registreer" class="register-submit">
+                <input type="submit" value="bestellen" class="form-submit">
             </div>
         </div>
         <!-- </div> -->

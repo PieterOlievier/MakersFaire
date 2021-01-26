@@ -122,6 +122,18 @@
       margin-left: 3rem;
   }
 
+  .form-submit{
+     
+      text-decoration: none;
+      padding: 2rem;
+      margin-left: 1rem;
+      margin-top: 2rem;
+      font-family: 'Retrocycles';
+      font-size: 3rem;
+      color: var(--red);
+      background-color: white;
+      border-radius: 3rem;
+  }
 
   @media only screen and (max-width: 1500px) {
 

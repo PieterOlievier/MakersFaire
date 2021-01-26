@@ -1,1 +1,1 @@
-TEST
+Mini Moto Mahyem is een project van Maker Faire Gentay om creatieve makers terug warm te maken om creatief aan de slag te gaan. Dit doen wij door jullie uit te nodigen om een gemotoriseerde fiets te maken. Tijdens het evenement kan je je machine tot het uiterste drijven door deel te nemen aan de race!
