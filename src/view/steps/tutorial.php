@@ -110,8 +110,8 @@ Druk hiervoor op de onderste knop.
         <img class="step1-detail" src="assets/img/stap1-detail.png">
 
 
-        <div class="step1-instruction__video" controls>
-        <video class="step1-video"  id="step1-clip">
+        <div  class="step1-instruction__video" controls>
+        <video controls class="step1-video"  id="step1-clip">
                 <source src="assets/gashendel.mp4" type="video/mp4">
             </video>
         </div>
@@ -215,7 +215,7 @@ Druk hiervoor op de onderste knop.
         </div>
 
         <div class="step4-video-test">
-         <video class="step4-video"  id="step4-clip">
+         <video controls class="step4-video"  id="step4-clip">
                 <source src="assets/carb-full.mp4" type="video/mp4">
             </video>
             </div>
