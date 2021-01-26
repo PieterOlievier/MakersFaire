@@ -33,7 +33,8 @@
 
         <div class="shop-link">
             <p>Heb je nog geen kit?</p>
-            <p class="shop-link__button">Naar shop</p>
+            
+            <a class="shop-link__button" href="index.php?page=shop">Naar shop</a>
         </div>
         <img class="intro-detail" src="assets/img/intro-detail.png">
         

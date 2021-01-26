@@ -169,6 +169,7 @@
   text-decoration: underline;
   color: var(--red);
   padding-bottom: 2rem;
+  z-index: 1;
 }
 
 .intro-detail{

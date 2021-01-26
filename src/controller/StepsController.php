@@ -47,7 +47,7 @@ class StepsController extends Controller
           'stad' => $_POST['stad']
         ));
         if (!empty($inserteduser)) {
-          $_SESSION['info'] = 'Registratie voltooid! </br>Hier kan je inloggen met je nieuwe account';
+          $_SESSION['info'] = 'Bestelling voltooid!';
           header('location:index.php?page=index');
           exit();
         }
