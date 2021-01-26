@@ -1232,9 +1232,9 @@ video{
   max-width: 100%;
 }
 
-.step3-step__title{
+/* .step3-step__title{
   display: none;
-}
+} */
 
 .step3-t1{
   grid-row: 2;
